@@ -1,11 +1,13 @@
 package org.yen.day07.oop;
 
 public class Circle {
+	//멤버변수
 	// 반지름
 	// 이름
 	public double radius;
 	public String name;
 	
+	//메서드
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
