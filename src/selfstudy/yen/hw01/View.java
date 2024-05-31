@@ -1,5 +1,6 @@
 package selfstudy.yen.hw01;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class View {
@@ -19,21 +20,20 @@ public class View {
 	public void printMessage(String msg) {
 		System.out.println(msg);
 	}
-	public void login() {
-		System.out.println("로그인 메뉴입니다.");
+	public User sign() {
 		Scanner sc = new Scanner(System.in);
+		System.out.println("৻(≧ᗜ≦৻)하오은행의 회원이 되어주세요✿");
 		System.out.print("아이디 : ");
 		String id = sc.next();
-		System.out.println("비밀번호 : ");
+		System.out.print("비밀번호 : ");
 		String pw = sc.next();
-	}
-	public void checkAcoount() {
-//		현재 내 계좌 정보입니다.
-//		사용자 : 장하오
-//		현재 잔액 : 50,000원
-		System.out.println("현재 내 계좌 정보입니다.");
-		System.out.print("사용자 : ");
-		System.out.print("현재 잔액 : ");
+		System.out.print("이름 : ");
+		String name = sc.next();
+		int account = (int)(Math.random() * 8999) + 1000;
+		System.out.println("계좌번호 :"+account);
+		int balance = 0;
+		User user= new User(name, id, pw, balance, account);
+		return user;
 	}
 
 }
