@@ -12,6 +12,7 @@ public class ViewMember {
 		System.out.println("3. 회원 전체정보 조회");
 		System.out.println("4. 회원정보수정");
 		System.out.println("5. 회원정보삭제");
+		System.out.println("6. 선택회원 삭제");
 		System.out.println("0. 프로그램 종료");
 		System.out.print("메뉴 선택 : ");
 		int input=sc.nextInt();

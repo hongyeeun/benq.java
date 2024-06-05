@@ -13,5 +13,11 @@ public class Exam_Variable {
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println(c);
+		System.out.println();
+		System.out.println("Hello"+'q');
+		System.out.println("Hello"+3.14);
+		System.out.println(10+20+"Hello");
+		System.out.println(10+"Hello"+20);
+		System.out.println(10+(20+"Hello")); //숫자 못만나게 묶음
 	}
 }

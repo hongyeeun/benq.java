@@ -17,7 +17,7 @@ public class Student {
 	}
 	
 	public String toString() {
-		return this.name+" 학생의 첫번째 점수는 "+this.score1+"점, "
-				+ "두번째 점수는 "+this.score2+"점입니다.";
+		return (this.name +" 학생의 첫번째 점수는 "+this.score1+"점, "
+				+ "두번째 점수는 "+this.score2+"점입니다.");
 	}
 }

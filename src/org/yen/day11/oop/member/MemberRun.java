@@ -49,10 +49,13 @@ public class MemberRun {
 			case 6:
 				// 회원 정보 검색하여 삭제
 				// 회원 검색(이메일)
-				String deleteEmail = view.inputEmail();
+				email = view.inputEmail();
 				// 검색하여 나오는 멤버
-				member = mng.searchOneByEmail(deleteEmail); 
-				
+				member = mng.searchOneByEmail(email); 
+				// 그 멤버 삭제하기
+				if(member!=null)
+					mng.deleteOneMember(member);
+				else view.displayMessage("찾으려는 회원이 없습니다.");
 				break;
 			case 0: 
 				view.displayMessage("프로그램을 종료합니다.");

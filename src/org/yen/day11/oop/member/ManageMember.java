@@ -46,4 +46,9 @@ public class ManageMember {
 //			member = null;
 //		}
 	}
+
+	public void deleteOneMember(Member member) {
+		System.out.println(member.getMemberName()+"님의 정보가 삭제되었습니다.");
+		
+	}
 }
