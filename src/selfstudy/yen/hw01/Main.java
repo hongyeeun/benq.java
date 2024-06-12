@@ -18,7 +18,7 @@ public class Main {
 				break;
 			case 2:
 				// 계좌확인
-				bank.checkAcoount(user);
+				//bank.checkAcoount(user);
 				break;
 			case 3:
 				// 입금하기
