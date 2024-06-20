@@ -1,0 +1,18 @@
+Server
+- ServerSocket -> 생성 시 port값 넣어줘야한다.
+- Socket -> 생성 시 serverSocket.accpet();
+- port
+
+Client
+- socket -> 생성 시 address, port 넣어줘야 한다.
+- address, port 
+
+* 주스트림은 생성할 때 socket의 get메소드로 받는다.
+* 보조스트림은 생성할 때 dis = new Datainputstream(is) 주스트림 넣어준다..
+* 문자 보낼 때 출력 스트림 이용 (outputstream, write) -> 출력한 후에 flush();로 버퍼 비워줘야한다.
+* 이걸 외우자 !!! *
+String recvMsg = dis.readUTF();
+String sendMsg = sc.nextLine();
+dos.writeUTF(sendMsg);
+dos.flush();
+
